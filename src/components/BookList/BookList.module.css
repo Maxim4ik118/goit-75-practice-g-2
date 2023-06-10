@@ -1,0 +1,46 @@
+.booksList {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.booksItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  list-style: none;
+  width: calc((100% - 90px) / 4);
+  position: relative;
+  height: 100%;
+}
+
+.booksItem img {
+  width: 100%;
+}
+
+.bookRemove {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.bookFav {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.iconHeart {
+  width: 18px;
+  height: 18px;
+  transition: all .3s;
+}
+.iconHeart.fav {
+  fill: red;
+}
